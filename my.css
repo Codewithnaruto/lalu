@@ -203,7 +203,7 @@ footer {
 .text-container {
     height: 20px;
     width: 100%;
-    overflow: visible;
+    overflow: hidden;
     position: relative;
     background-color: #eceef0de;
     padding: 15px 0;
