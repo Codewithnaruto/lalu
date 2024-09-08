@@ -1,0 +1,298 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafac2;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #0e0d0d;
+}
+
+a {
+    text-decoration: none;
+    color: #e0e40e;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #f6f7f1;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color:#070606
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #007bff;
+    padding: 10px 0px;
+}
+
+nav a {
+    color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Service Section */
+.service-item {
+    background-color: #fcf8f8;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styling */
+.loan-list-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Header styling */
+.loan-list-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* List styling */
+.loan-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.loan-item {
+    background-color: #fafafa;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid #4CAF50;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.loan-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Loan details */
+.loan-item h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+.loan-item p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Amount styling */
+.loan-item h2 span {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .loan-list-container {
+        padding: 10px;
+    }
+
+    .loan-item {
+        padding: 10px;
+    }
+}
+
+
+.testimonial-item cite {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Contact Section */
+section#contact {
+    text-align: center;
+}
+
+section#contact a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+}
+/* Container styling for the animated text */
+.text-container {
+    height: 20px;
+    width: 100%;
+    overflow: visible;
+    position: relative;
+    background-color: #eceef0de;
+    padding: 15px 0;
+    
+}
+
+/* Moving text styling */
+.moving-text {
+    position: absolute;
+    
+    width: 100%;
+    right: -80%;
+    animation: move-right 10s ease-in-out infinite;
+    font-size: 20px;
+    color: #333;
+}
+.moving-text:hover {
+    animation-play-state: paused; /* Stops the animation when hovered */}
+
+/* Animation keyframes */
+@keyframes move-right {
+    0% {
+        right: -80%;
+    }
+    100% {
+        right: 80%;
+    }
+}
+
+a {
+    color: rgb(241, 241, 245); /* Default link color */
+  }
+
+  /* Visited link */
+  a:visited {
+    color: purple; /* Color after the link has been clicked */
+  }
+
+  /* Link on hover */
+  a:hover {
+    color: rgb(24, 24, 22); /* Color when hovering over the link */
+  }
+
+  /* Active link */
+  a:active {
+    color: green; /* Color when the link is clicked and held */
+  }
+
+  .fullscreen-photo {
+    position: absolute; /* Positions the photo absolutely */
+    top: 20;
+    left: 0;
+    width: 100vw;  /* Full viewport width */
+    height: 120vh; /* Full viewport height */
+    object-fit: cover; /* Ensures the photo covers the entire area */
+    z-index: -1; /* Sends the photo to the background */
+  }
+
+  .photo {
+    position: absolute; /* Positions the photo absolutely */
+    top: 0; /* Aligns the photo to the top */
+    left: 0; /* Aligns the photo to the left */
+    width: 250px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .styled-text {
+    font-size: 18px;
+    color: #0c0303;
+    text-transform: capitalize;
+    text-shadow: 100000px 100000px 200000px rgb(248, 4, 4);
+    line-height: 1.6;
+    
+    
+  }
+  .first-photo {
+
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 61vh;
+    top: 0;
+    left: 0;
+
+  }
+   
+
+
+  
+
+  
